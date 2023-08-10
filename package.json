@@ -1,0 +1,35 @@
+{
+  "name": "importacsv",
+  "version": "1.0.0",
+  "description": "importação de csv para db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
+  },
+  "keywords": [
+    "api",
+    "gatway",
+    "javascript"
+  ],
+  "author": "Léo Santos",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^5.0.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cron": "^2.3.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.1.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.2",
+    "node-firebird": "^1.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sucrase": "^3.32.0"
+  }
+}
